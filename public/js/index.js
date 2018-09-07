@@ -9,10 +9,10 @@ socket.on('connect', function() {
 //   });
 // });
 
-socket.emit('createMessage', {
-  from: 'Client',
-  text: 'Message from Client'
-  });
+// socket.emit('createMessage', {
+//   from: 'Client',
+//   text: 'Message from Client'
+//   });
 });
 socket.on('disconnect', function() {
   console.log('Disconnected from Server');
@@ -22,5 +22,5 @@ socket.on('disconnect', function() {
 //   console.log('New email', email);
 // });
 socket.on('newMessage', function(message) {
-  console.log('New Message:', message);
+  console.log('newMessage:', message);
  });
